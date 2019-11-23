@@ -2,6 +2,6 @@ import * as React from 'react';
 
 export default () => (
   <div>
-    <h1>Empty project</h1>
+    <h1>Add page</h1>
   </div>
 );

@@ -30,7 +30,7 @@ const composeEnhancers = typeof window === 'object'
 
 const store = createStore(
   combineReducers({
-    user: persistReducer(todosPersistConfig, userReducer),
+    // user: persistReducer(todosPersistConfig, userReducer),
   //  githubProjects: githubProjectsReducer,
     router: connectRouter(history),
   }),
@@ -40,6 +40,6 @@ const store = createStore(
 );
 const persistor = persistStore(store);
 
-sagaMiddleware.run(userSaga);
+// sagaMiddleware.run(userSaga);
 
 export default () => ({ store, persistor });

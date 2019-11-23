@@ -64,6 +64,10 @@ type ActionHandler<T> =
 
 
 interface RootState {
-  // key: value
+  addresses: Address[];
 }
 
+interface Address {
+  id: number;
+  address: string;
+}
